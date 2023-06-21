@@ -1,14 +1,12 @@
 # Dinamo Mea Test
 
-You can use the project live [Task](https://github.com/facebook/create-react-app).
+You can use the project live [Dinamo Mea Test](https://dinamo-mea-test.netlify.app/).
 
 ## Technologies
 
 -   React - TypeScript.
 -   Redux- Redux toolkit.
 -   ant design.
-
-<br/>
 
 ## Features
 
@@ -17,8 +15,6 @@ You can use the project live [Task](https://github.com/facebook/create-react-app
 -   UI made by ant design library.
 -   Project made by React library beside TypeScript.
 -   CRUD operators done by Redux toolkit.
-
-<br/>
 
 ## Available Scripts
 
