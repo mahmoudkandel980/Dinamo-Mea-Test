@@ -31,8 +31,9 @@ const createPost = async (formData: CreatePostFormData) => {
 
     const { data } = await axios.post(`${API_URL}/posts`, formData, config);
 
-    // insert key property for a post
+    // insert key and userId properties for a post
     data.key = data.id;
+    data.userId = data.id;
 
     const post: PostsDataType = data;
     const success: NotificationInterface = {
