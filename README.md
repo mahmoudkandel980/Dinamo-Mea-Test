@@ -8,6 +8,7 @@ You can use the project live [Dinamo Mea Test](https://dinamo-mea-test.netlify.a
 -   TypeScript.
 -   Redux- Redux toolkit.
 -   ant design.
+-   axios
 
 ## Features
 
@@ -15,7 +16,7 @@ You can use the project live [Dinamo Mea Test](https://dinamo-mea-test.netlify.a
 -   Users can Get Posts. Create, Edit and Delete post.
 -   UI made by ant design library.
 -   Project made by React library beside TypeScript.
--   CRUD operators done by Redux toolkit.
+-   CRUD operators done by axios and Redux toolkit.
 
 ## how to run application
 
