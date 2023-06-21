@@ -4,7 +4,8 @@ You can use the project live [Dinamo Mea Test](https://dinamo-mea-test.netlify.a
 
 ## Technologies
 
--   React - TypeScript.
+-   React.
+-   TypeScript.
 -   Redux- Redux toolkit.
 -   ant design.
 
@@ -16,19 +17,15 @@ You can use the project live [Dinamo Mea Test](https://dinamo-mea-test.netlify.a
 -   Project made by React library beside TypeScript.
 -   CRUD operators done by Redux toolkit.
 
-## Available Scripts
+## how to run application
 
-In the project directory, you can run:
-
-### `npm install`
-
-In the terminal run the command
+Download repository locally into your machine, then install dependencies by run the next command In the terminal.
 
 ```console
 npm install
 ```
 
-,then run the command
+Then run the command in below.
 
 ```console
 npm start

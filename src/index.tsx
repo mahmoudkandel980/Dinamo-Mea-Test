@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 
-// GET, POST, PUT, DELETE Redux
+// GET, POST, PUT and DELETE opertors in Redux
 import { Provider } from "react-redux";
 import store from "./store/store";
 

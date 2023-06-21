@@ -112,9 +112,10 @@ export const postSlice = createSlice({
                 state.loading = false;
                 const { post, success } = action.payload;
                 state.success = success;
-                const oldPosts = [...state.posts];
-                oldPosts.push(post);
-                state.posts = oldPosts;
+                // Add the created post to the posts
+                const modifiedPosts = [...state.posts];
+                modifiedPosts.push(post);
+                state.posts = modifiedPosts;
             })
             .addCase(createPost.rejected, (state, action) => {
                 state.loading = false;
@@ -128,12 +129,13 @@ export const postSlice = createSlice({
                 state.loading = false;
                 const { post, success } = action.payload;
                 state.success = success;
-                const oldPosts = [...state.posts];
-                const editedPostIndex: number = oldPosts.findIndex(
+                // Add edited post instead of the old one to the posts
+                const modifiedPosts = [...state.posts];
+                const editedPostIndex: number = modifiedPosts.findIndex(
                     (p: PostsDataType) => +p.id === +post.id
                 );
-                oldPosts.splice(editedPostIndex, 1, post);
-                state.posts = oldPosts;
+                modifiedPosts.splice(editedPostIndex, 1, post);
+                state.posts = modifiedPosts;
             })
             .addCase(editPost.rejected, (state, action) => {
                 state.loading = false;
@@ -147,12 +149,13 @@ export const postSlice = createSlice({
                 state.loading = false;
                 const { id, success } = action.payload;
                 state.success = success;
-                const oldPosts = [...state.posts];
-                const editedPostIndex: number = oldPosts.findIndex(
+                // Delete the post with the same id from posts
+                const modifiedPosts = [...state.posts];
+                const editedPostIndex: number = modifiedPosts.findIndex(
                     (p: PostsDataType) => +p.id === +id
                 );
-                oldPosts.splice(editedPostIndex, 1);
-                state.posts = oldPosts;
+                modifiedPosts.splice(editedPostIndex, 1);
+                state.posts = modifiedPosts;
             })
             .addCase(deletePost.rejected, (state, action) => {
                 state.loading = false;
